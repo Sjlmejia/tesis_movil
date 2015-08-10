@@ -40,6 +40,8 @@ public class Prueba1 extends Activity {
 	//TextView calificacion;
 	Double a;
 	Double respuesta;
+	Double respuesta3;
+	Double respuesta4;
 	String data;
 	JSONArray ja;
 	String data1;
@@ -54,6 +56,8 @@ public class Prueba1 extends Activity {
 	JSONArray ja5;
 	String data6;
 	JSONArray ja6;
+	String data7;
+	JSONArray ja7;
 String tp;
 	Chronometer prueba;
 	double calificacion_final;
@@ -254,8 +258,13 @@ String tp;
 						data6 = hgd.httpGetData("http://siscap.shiriculapo.com/siscap-webservice/recuperarcalificacionrespuestas.php?descripcion="+listChoice+"&evaluacion_id="+aux2);
 						try {
 							ja6 =new JSONArray(data6);
-							String calificacion=ja6.getString(0);
-							
+							data7 = hgd.httpGetData("http://siscap.shiriculapo.com/siscap-webservice/calificacionEvaluacion.php?id="+aux2);
+							ja7= new JSONArray(data7);
+							String calificacion3=ja7.getString(0);
+							respuesta3=Double.parseDouble(calificacion3);
+							respuesta4=respuesta3/listaCap.size();
+							String calificacion2=ja6.getString(0);
+							String calificacion=respuesta4.toString();
 							bolsa.putString("Pregunta",listChoice);
 							bolsa1.putString("cedula", aux1);
 							bolsa2.putString("evaid", aux2);

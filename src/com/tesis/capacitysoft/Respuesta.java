@@ -181,7 +181,7 @@ import android.widget.Toast;
                           try {
                         	  data8=vd.httpGetData("http://siscap.shiriculapo.com/siscap-webservice/recuperarrespuestascorrecta.php?pregunta_id="+aux2);
                             ja8=new JSONArray(data8);
-                                if(ja8.length()>0){
+                                if(ja8.length()>1){
                               
                               a=Double.parseDouble(aux6);
                              
@@ -213,15 +213,16 @@ import android.widget.Toast;
                           for(int i=0;i<=suma-1;i++){
                              if(!listasauxiliar2.isEmpty()){
                              vd.httpGetData("http://siscap.shiriculapo.com/siscap-webservice/registroevaluacion.php?capacitado_id="+aux3+"&pregunta_id="+aux2+"&respuesta_id="
-                                        +listasauxiliar2.get(i)+"&calificacion_estudiante="+respuesta2+"&evaluacion_id="+aux4);
+                                        +listasauxiliar2.get(i)+"&calificacion_pregunta="+respuesta2+"&evaluacion_id="+aux4);
                              }
                              if(!listasauxiliar3.isEmpty()){
                                final Double califica=-Double.parseDouble(respuesta2);
-                              final String calificacion2=califica.toString();
+                               final Integer calificacion3=0;
+                              final String calificacion2=calificacion3.toString();
                             
                                 //aux+ "&id="+aux5+"&calificacion_estudiante="+aux6+"&evaluacion_id="+aux4);
                              vd.httpGetData("http://siscap.shiriculapo.com/siscap-webservice/registroevaluacion.php?capacitado_id="+aux3+"&pregunta_id="+aux2+"&respuesta_id="
-                                          +listasauxiliar3.get(i)+"&calificacion_estudiante="+calificacion2+"&evaluacion_id="+aux4); 
+                                          +listasauxiliar3.get(i)+"&calificacion_pregunta="+calificacion2+"&evaluacion_id="+aux4); 
                               
                               }
                                   h.sendEmptyMessage(1);
@@ -258,15 +259,16 @@ import android.widget.Toast;
                         for(int i=0;i<=suma-1;i++){
                           if(!listasauxiliar2.isEmpty()){
                            vd.httpGetData("http://siscap.shiriculapo.com/siscap-webservice/registroevaluacion.php?capacitado_id="+aux3+"&pregunta_id="+aux2+"&respuesta_id="
-                                      +listasauxiliar2.get(i)+"&calificacion_estudiante="+respuesta2+"&evaluacion_id="+aux4);
+                                      +listasauxiliar2.get(i)+"&calificacion_pregunta="+respuesta2+"&evaluacion_id="+aux4);
                           }
                            if(!listasauxiliar3.isEmpty()){
                              final Double califica=-Double.parseDouble(respuesta2);
-                            final String calificacion2=califica.toString();
+                             final Integer calificacion3=0;
+                            final String calificacion2=calificacion3.toString();
                           
                               //aux+ "&id="+aux5+"&calificacion_estudiante="+aux6+"&evaluacion_id="+aux4);
                            vd.httpGetData("http://siscap.shiriculapo.com/siscap-webservice/registroevaluacion.php?capacitado_id="+aux3+"&pregunta_id="+aux2+"&respuesta_id="
-                                        +listasauxiliar3.get(i)+"&calificacion_estudiante="+calificacion2+"&evaluacion_id="+aux4); 
+                                        +listasauxiliar3.get(i)+"&calificacion_pregunta="+calificacion2+"&evaluacion_id="+aux4); 
                             
                             }
                                 h.sendEmptyMessage(1);
