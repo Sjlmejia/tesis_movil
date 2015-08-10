@@ -58,7 +58,9 @@ public class Prueba1 extends Activity {
 	JSONArray ja6;
 	String data7;
 	JSONArray ja7;
-String tp;
+	String data8;
+	JSONArray ja8;
+	String tp;
 	Chronometer prueba;
 	double calificacion_final;
 	String horario;
@@ -201,7 +203,8 @@ String tp;
 							ja = null;
 						
 							data2 = vd.httpGetData("http://siscap.shiriculapo.com/siscap-webservice/recuperarCorreoCapacitador1.php?id="+aux1);
-			            	data = vd.httpGetData("http://siscap.shiriculapo.com/siscap-webservice/recuperacalificacionrespuestas.php?id="+aux2);
+							data8 = vd.httpGetData("http://siscap.shiriculapo.com/siscap-webservice/recuperarcelularcap.php?id="+aux1);
+			            	data = vd.httpGetData("http://siscap.shiriculapo.com/siscap-webservice/recuperacalificacionrespuestas.php?id="+aux2+"&capacitado_id="+aux1);
 			            	if(data.length()>0){
 			            		calificacion_final=0.0;
 			            	try {
@@ -215,13 +218,24 @@ String tp;
 								}
 								ja2=new JSONArray (data2);
 								String aux=ja2.getString(0);
+								ja8 = new JSONArray(data8);
+								String aux7=ja8.getString(0);
+								final String p1,p2,p3,tp;
+						
+	
+								p1=aux7.substring(0,4);
+							    p2=aux7.substring(5,8);
+							    p3=aux7.substring(9);
+							    tp=p1+p2+p3;
+							    SmsManager smsManager = SmsManager.getDefault();
+							    smsManager.sendTextMessage(aux7, null,"Su nota es:"+ calificacion_final+"", null, null);
 								//Intent y=new Intent(android.content.Intent.ACTION_SEND);
 								//y.setType("message/rfc822");
 								//y.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{aux});
 								//y.putExtra(android.content.Intent.EXTRA_SUBJECT, "Nota de Evaluacion");
 								//y.putExtra(android.content.Intent.EXTRA_TEXT, calificacion_final);
 								//startActivity(y.createChooser(y, "Enviando Correo"));
-								//vd.httpGetData("http://192.168.1.5/ejemplo/actualizarAcEva.php?id="+aux2+"&activo="+"0");
+								vd.httpGetData("http://siscap.shiriculapo.com/siscap-webservice/actualizarescap.php?id="+aux2+"&capacitado_id="+aux1+"&calificacion_estudiante="+calificacion_final);
 								h1.sendEmptyMessage(1);
 								finish();
 							} catch (JSONException e) {
