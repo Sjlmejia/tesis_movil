@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+     >
+
+    <TextView
+        android:id="@+id/lbl_nombreprueba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_iniciaeva"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000"
+    android:textSize="30sp"
+    android:textStyle="bold" />
+    
+       
+
+    <Button
+        android:id="@+id/btn_iniciaeva"
+        android:layout_width="250dp"
+        android:layout_height="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="178dp"
+        android:background="@drawable/botonpulsado"
+        android:text="Iniciar Evaluacion"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp" />
+
+</RelativeLayout>

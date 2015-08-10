@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+   
+
+    <Button
+        android:id="@+id/btn_recursopdf"
+        android:layout_width="250dp"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="155dp"
+        android:background="@drawable/botonpulsado"
+        android:text="Enlace a Documento"
+        android:textColor="#757575"
+            android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/btn_recursovideo"
+        android:layout_width="250dp"
+        android:layout_height="53dp"
+        android:layout_above="@+id/btn_recursopdf"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="87dp"
+        android:background="@drawable/botonpulsado"
+        android:text="Video"
+   android:textColor="#757575"
+            android:textSize="19sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_above="@+id/btn_recursovideo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="49dp"
+        android:src="@drawable/trec" />
+
+</RelativeLayout>

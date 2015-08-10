@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+   
+    
+    >
+
+    <TextView
+        android:id="@+id/lbl_hfin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="88dp"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lbl_hinicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lbl_hfin"
+        android:layout_alignLeft="@+id/lbl_hfin"
+        android:layout_marginBottom="14dp"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lbl_fin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lbl_hinicio"
+        android:layout_alignLeft="@+id/lbl_hinicio"
+        android:layout_marginBottom="16dp"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lbl_inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lbl_fin"
+        android:layout_alignLeft="@+id/lbl_fin"
+        android:layout_marginBottom="14dp"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lbl_lugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lbl_inicio"
+        android:layout_alignLeft="@+id/lbl_inicio"
+        android:layout_marginBottom="20dp"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lbl_tema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lbl_lugar"
+        android:layout_alignLeft="@+id/lbl_lugar"
+        android:layout_marginBottom="14dp"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lbl_nombreprueba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/lbl_tema"
+        android:text="Tema:"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="@color/tomate"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lbl_lugar"
+        android:layout_alignParentLeft="true"
+        android:text="Lugar: "
+         android:textColor="@color/tomate"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbl_correoconsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lbl_inicio"
+        android:layout_alignParentLeft="true"
+        android:text="Fecha inicio:"
+         android:textColor="@color/tomate"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbl_celularConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lbl_fin"
+        android:layout_alignParentLeft="true"
+        android:text="Fecha fin:"
+         android:textColor="@color/tomate"
+         
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lbl_fin"
+        android:text="Hora inicio:"
+         android:textColor="@color/tomate"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/lbl_hfin"
+        android:text="Hora fin:"
+         android:textColor="@color/tomate"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+      <TextView
+          android:id="@+id/TextView01"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/textView6"
+          android:layout_marginTop="21dp"
+          android:text="Observaciones:"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="@color/tomate" />
+
+      <TextView
+          android:id="@+id/lbl_observaciones"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/lbl_hfin"
+          android:layout_alignTop="@+id/TextView01"
+          android:text="TextView"
+          android:textAppearance="?android:attr/textAppearanceSmall" />
+
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginTop="20dp"
+          android:text="Información de La Capacitación"
+          android:textColor="#000000"
+          android:textSize="22sp" />
+
+</RelativeLayout>

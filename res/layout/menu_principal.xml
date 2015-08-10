@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+     >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="42dp"
+        android:text="Seleccione una Opción"
+        android:textSize="25sp" 
+        android:textColor="#000000"
+        />
+
+        <Button
+            android:id="@+id/btn_prueba"
+            android:layout_width="250dp"
+            android:layout_height="53dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="111dp"
+            android:background="@drawable/botonpulsado"
+            android:text="Rendir Prueba"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/btn_recurso"
+            android:layout_width="250dp"
+            android:layout_height="53dp"
+            android:layout_above="@+id/btn_concap"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/botonpulsado"
+            android:text="Recursos"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/btn_concap"
+            android:layout_width="250dp"
+            android:layout_height="53dp"
+            android:layout_above="@+id/btn_prueba"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="42dp"
+            android:background="@drawable/botonpulsado"
+            android:text="Consultar Capacitador"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/btn_iCapacitacion"
+            android:layout_width="250dp"
+            android:layout_height="53dp"
+            android:layout_above="@+id/btn_recurso"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="38dp"
+            android:background="@drawable/botonpulsado"
+            android:text="Información Capacitación"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    
+    
+    >
+
+  
+
+  
+
+  <ListView
+      android:id="@+id/list_pregunta"
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:layout_above="@+id/btn_califica"
+      android:layout_alignParentLeft="true"
+      android:layout_marginBottom="66dp" >
+  </ListView>
+
+  <Button
+      android:id="@+id/btn_califica"
+      android:layout_width="250dp"
+      android:layout_height="53dp"
+           android:background="@drawable/botonpulsado"
+    android:textColor="#FFFFFF"
+            android:textSize="19sp"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="34dp"
+ 
+      android:text="Guardar Evaluacion"
+       />
+
+  <Chronometer
+      android:id="@+id/cronometroprueba"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/btn_califica"
+      android:layout_alignParentTop="true"
+      android:layout_marginLeft="47dp"
+      android:paddingTop="50sp"
+      android:textSize="15sp"
+      android:textStyle="bold" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/list_pregunta"
+      android:layout_alignParentLeft="true"
+      android:layout_marginBottom="56dp"
+      android:text="Listado de Preguntas"
+      android:textColor="#000000"
+      android:textSize="25sp" />
+
+  <TextView
+      android:id="@+id/textView1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/cronometroprueba"
+      android:layout_alignBottom="@+id/cronometroprueba"
+      android:layout_alignParentLeft="true"
+      android:layout_marginLeft="19dp"
+      android:text="Tiempo: "
+      android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

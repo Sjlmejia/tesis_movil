@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="celeste" >#34495E</color>
+    <color name="plomo" >#BDC3C7</color>
+    <color name="morado" >#1A237E</color>
+    <color name="moradoc" >#5C6BC0</color>
+    <color name="azulejo" >#0277BD</color>
+     <color name="verde" >#FF8A65</color>
+     <color name="moradodos" >#448AFF</color>
+      <color name="tomate" >#F4511E</color>
+      <color name="vivo" >#00BCD4</color>
+      <color name="azul" >#0277BD</color>
+      <color name="plomos" >#9E9E9E</color>
+      <color name="plomito" >#757575</color>
+      <color name="primary" >#9E9E9E</color>
+      <color name="primaryDark" >#616161</color>
+      <color name="accent" >#607D8B</color>
+       <color name="amareto1" >#FFD54F</color>
+      <color name="amareto2" >#FFA000</color>
+       <color name="azulitos" >#03A9F4</color>
+</resources>

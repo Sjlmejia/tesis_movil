@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+    <Button
+        android:id="@+id/btn_hisCap"
+        style="@style/st_main_menu"
+        android:layout_width="250dp"
+        android:layout_height="53dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/botonpulsado"
+        android:text="Historial de Capacitaciones"
+            android:textColor="#FFFFFF"
+    android:textSize="19sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_CapDispon"
+        android:layout_width="250dp"
+        android:layout_height="53dp"
+        android:layout_above="@+id/btn_hisCap"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/botonpulsado"
+        android:text="Capacitaciones Disponibles"
+            android:textColor="#FFFFFF"
+    android:textSize="19sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="42dp"
+        android:text="SELECCIONE UNA OPCIÓN:"
+        android:textSize="25sp" 
+        android:textColor="#000000"
+        />
+
+  
+
+</RelativeLayout>

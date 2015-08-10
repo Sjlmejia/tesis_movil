@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+  
+    >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize" >
+
+            <EditText
+                android:id="@+id/txt_nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:ems="10"
+                android:hint="Nombres*"
+                tools:ignore="HardcodedText" 
+                   android:inputType="textPersonName"
+                  
+                />
+
+            <EditText
+                android:id="@+id/txt_apellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_weight="0.03"
+                android:ems="10"
+                android:hint="Apellidos*"
+                 android:inputType="text"
+                tools:ignore="HardcodedText,InefficientWeight" />
+
+            <EditText
+                android:id="@+id/txt_contraseniaC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:ems="10"
+                android:hint="Contraseña*"
+                android:inputType="textPassword"
+                tools:ignore="HardcodedText" />
+             <EditText
+                android:id="@+id/txt_contraseniaR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:ems="10"
+                android:hint="Confirme Contraseña*"
+                android:inputType="textPassword"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/txt_cedula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:ems="10"
+                android:hint="Cédula*"
+                android:inputType="number"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txt_hClinica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:hint="Historia Clínica"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txt_direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:ems="10"
+                android:hint="Dirección*"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txt_teleDomicilio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Telefono Domiciliario"
+                android:inputType="phone"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txt_celular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:ems="10"
+                android:hint="Celular*"
+                android:inputType="number"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:ems="10"
+                android:hint="E-mail*"
+                android:inputType="textEmailAddress"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txt_cargo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Cargo*"
+                tools:ignore="HardcodedText"
+                 android:inputType="text"
+                
+                 />
+                <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+ <TextView
+     android:id="@+id/lbl_recp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Sector"
+     android:textColor="@color/plomito"
+     tools:ignore="HardcodedText" />
+
+        <Spinner
+            
+            android:id="@+id/txt_sector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+			
+    </LinearLayout>
+              <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+ <TextView
+     android:id="@+id/textView2"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Tipo"
+     android:textColor="@color/plomito"
+     tools:ignore="HardcodedText" />
+
+        <Spinner
+            
+                android:id="@+id/txt_tCapacitado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+			
+    </LinearLayout>
+          
+
+
+            <EditText
+                android:id="@+id/txt_tOficina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Telefono Oficina"
+                android:inputType="phone"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txt_extOficina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Telefono Extensión Oficina"
+                android:inputType="number"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btn_registroCap"
+                 android:layout_width="250dp"
+    android:layout_height="43dp"
+    android:background="@drawable/botonpulsado"
+     android:textColor="#EDE7F6"
+    android:textSize="23sp"
+                android:layout_alignLeft="@+id/lbl_recursos"
+                android:layout_centerVertical="true"
+                android:text="Registro"
+                tools:ignore="ObsoleteLayoutParam,HardcodedText" />
+
+            <Button
+                android:id="@+id/btn_cancelar"
+               android:layout_width="250dp"
+    android:layout_height="30dp"
+     android:background="@drawable/botoncancela"
+     android:textColor="#EDE7F6"
+                android:layout_alignLeft="@+id/lbl_recursos"
+                android:layout_centerVertical="true"
+                android:text="Cancelar"
+                tools:ignore="ObsoleteLayoutParam,HardcodedText" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

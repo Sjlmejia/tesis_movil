@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- Estado Pulsado -->
+    <item android:drawable="@color/tomate" android:state_pressed="true" />
+	<!-- Estado Normal -->
+	<item android:drawable="@color/azul" />
+</selector>
