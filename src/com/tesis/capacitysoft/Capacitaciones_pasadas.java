@@ -51,7 +51,7 @@ public class Capacitaciones_pasadas extends Activity {
 		// historial=(Button)findViewById(R.id.btn_hCapacitaciones);
 		 Bundle bolsa=getIntent().getExtras();
 		 
-		
+		 final String idcap=bolsa.getString("cedula");
 		 //prueba.setText(bolsa.getString("Nombre"));
 		ArrayList<String> listaCap=new ArrayList<String>();
 
@@ -89,18 +89,15 @@ public class Capacitaciones_pasadas extends Activity {
 							try {
 								ja = new JSONArray(data);
 								ja2=new JSONArray(data2);
-								data3 = hgd.httpGetData("http://siscap.shiriculapo.com/siscap-webservice/recuperacalificacionrespuestas.php?id="+ja2.getString(0));
+								data3 = hgd.httpGetData("http://siscap.shiriculapo.com/siscap-webservice/recuperacalificacionrespuestas.php?id="+ja2.getString(0)+"&capacitado_id="+idcap);
 								//String aux2=ja.getString(0);
-								ja3=new JSONArray(data3);
-			            		calificacion_final=0.0;
-			            
-								for(int i=0; i<ja3.length();i++){
-									calificacion_final=calificacion_final+Double.parseDouble((String) ja3.get(i));
-									
-								}
-								if(calificacion_final<0.0){
+								if (data3.length()>0){
+									ja3=new JSONArray(data3);
+									calificacion_final=Double.parseDouble(ja3.getString(0));
+								}else{
 									calificacion_final=0.0;
 								}
+								
 								
 			            	String cal=calificacion_final.toString();
 								ArrayList<String> lista =new ArrayList<String>();

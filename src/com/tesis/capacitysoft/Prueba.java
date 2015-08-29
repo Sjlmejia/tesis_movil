@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.text.Html;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -80,15 +81,16 @@ public class Prueba extends Activity {
 							
 							ja = null;
 							HttpGetData v=new HttpGetData();
-							data = v.httpGetData("http://siscap.shiriculapo.com/siscap-webservice/recuperaidevaluacion.php?tema="+aux);
+							data = v.httpGetData("http://siscap.shiriculapo.com/siscap-webservice/recuperaidevaluacion2.php?tema="+aux);
 							
 							if (data.length()>0){
 								try {
-									
+									Log.e("Msg","LLego 1");
 									ja = new JSONArray(data);
 									String aux2=ja.getString(0);
 									data8 = v.httpGetData("http://siscap.shiriculapo.com/siscap-webservice/recuperaidevaluacions.php?evaluacion_id="+aux2+"&capacitado_id="+aux1);
 									if(data8.length()>0){
+										
 										h.sendEmptyMessage(1);
 										 finish();
 									}else{
